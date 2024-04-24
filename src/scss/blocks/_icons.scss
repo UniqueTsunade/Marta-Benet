@@ -1,0 +1,91 @@
+.icon {
+	margin-right: 23px;
+
+
+
+	@include desktop () {
+	margin-right: 2vw;
+	}
+}
+
+.header__first-word {
+	display: flex;
+	align-items: end;
+}
+
+.header__delimiter {
+	@extend .header__first-word;
+}
+
+.header__second-word {
+	@extend .header__first-word;
+}
+
+.icon--m {
+	width: 32px;
+	height: 20px;
+}
+
+.icon--a {
+	width: 17px;
+	height: 20px;
+}
+
+.icon--r {
+	width: 15px;
+	height: 20px;
+}
+
+.icon--t {
+	width: 13px;
+	height: 24px;
+
+	@include mobile-M () {
+		height: 22px;
+	}
+}
+
+.icon--a_last {
+	margin: 0;
+}
+
+.icon--delimiter {
+	margin: 0 25px;
+	width: 13px;
+	height: 18px;
+
+	@include tablet-portrait () {
+		margin: 0 10px;
+	}
+
+	@include mobile-L () {
+		margin: 0 6px;
+	}
+
+	@include mobile-M () {
+		margin: 0 4px;
+	}
+}
+
+.icon--b {
+	width: 21px;
+	height: 31px;
+
+	@include tablet-portrait () {
+		height: 28px;
+	}
+
+	@include mobile-M () {
+		height: 24px;
+	}
+}
+
+.icon--e {
+	width: 17px;
+	height: 20px;
+}
+
+.icon--n {
+	width: 20px;
+	height: 19px;
+}

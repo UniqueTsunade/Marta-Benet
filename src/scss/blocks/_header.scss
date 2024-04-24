@@ -1,0 +1,50 @@
+.header {
+	position: relative;
+	background-size: cover;
+	aspect-ratio: 1200 / 720;
+	background-image: url('./../../img/header-bg.jpg');
+	@include mediaBg() {
+		background-image: url('./../../img/header-bg@2x.jpg');
+	}
+}
+
+.header__title {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	top: 67vh;
+	max-height: 48px;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+
+	@include desktop () {
+		top: 440px;
+	}
+
+	@include laptop () {
+		top: 380px;
+	}
+
+	@include tablet-landscape () {
+		top: 320px;
+		align-items: end;
+	}
+
+	@include tablet-portrait () {
+		top: 280px;
+	}
+
+	@include mobile-XL () {
+		top: 230px;
+	}
+
+	@include mobile-L () {
+		top: 180px;
+	}
+
+	@include mobile-M () {
+		top: 140px;
+	}
+}
+

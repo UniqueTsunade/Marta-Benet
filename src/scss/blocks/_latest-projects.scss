@@ -1,0 +1,44 @@
+.latest-projects {
+    .title {
+        margin: 192px 0 9px;
+
+        @include desktop () {
+            margin-top: clamp(3.125rem, -0.612rem + 18.68vw, 12rem);
+        }
+    }
+
+    .text {
+        max-width: 849px;
+        margin: 0 auto 63px;
+
+        @include desktop () {
+            margin-bottom: clamp(2.5rem, 1.895rem + 3.03vw, 3.938rem);
+        }
+    }
+}
+
+.latest-projects__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 24px;
+
+    @include tablet-portrait () {
+        column-gap: 15px;
+    }
+
+
+    @include mobile-L () {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+}
+
+.latest-projects__desc {
+    margin-top: 16px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(32 / 18);
+}
+

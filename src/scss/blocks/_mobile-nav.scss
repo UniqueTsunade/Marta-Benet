@@ -1,0 +1,25 @@
+.mobile-nav {
+	display: none;
+	
+    &--open {
+        display: block;
+    }
+}
+.mobile-nav__wrapper {
+	position: fixed;
+	z-index: 12;	
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 270px;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 20px;
+	background-color: var(--beige-color);
+	font-size: 19px;
+}
+
+.mobile-nav__item {
+	margin-bottom: 20px;
+}
+

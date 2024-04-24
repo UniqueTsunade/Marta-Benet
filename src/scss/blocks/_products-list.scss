@@ -1,0 +1,32 @@
+.products-list {
+    text-align: center;
+}
+
+.products-link {
+    position: relative;
+    font-family: Roboto;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: calc(80 / 52);
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 0px;
+        bottom: 0;
+        left: 0;
+        border-bottom: 2px solid var(--black-color);
+      }
+
+      &:hover::after {
+        width: 100%;
+        right: 0;
+        transition: all .5s linear;
+      }
+
+
+      @include desktop () {
+        font-size: clamp(1.563rem, 0.852rem + 3.55vw, 3.25rem);
+      }
+}

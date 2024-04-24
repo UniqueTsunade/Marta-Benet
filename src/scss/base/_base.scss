@@ -1,0 +1,33 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden !important;
+}
+
+body, a {
+	color: var(--black-color);
+}
+
+/*Will change*/
+.artifacts__title, .header__first-word, .header__second-word, .artifacts__picture, .products__img-left, .products__img-right, .latest-projects__content, .container-grid__title, .container-grid__desc, .services_info {
+	will-change: transform;
+}
+
+.header__delimiter, .artifacts__picture, .products-link, .services_info {
+	will-change: opacity;
+}
+
+#services-btn {
+	will-change: scale;
+}
+
+.container {
+	padding: 0 64px;
+
+	@include mobile-XL () {
+		padding: 0 30px;
+	}
+
+	@include mobile-M () {
+		padding: 0 20px;
+	}
+}

@@ -1,0 +1,36 @@
+.services {
+    .title {
+        margin: 192px 0 64px;
+
+        @include desktop () {
+            margin-top: clamp(3.125rem, -0.612rem + 18.68vw, 12rem);
+        }
+    }
+
+    .services_info {
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        margin: 32px auto 224px;
+        width: max-content;
+        transition: .5s;
+            
+            &:hover {
+            transition : .4s;
+            padding: 5px 40px;
+            transform : translateY(-0px);
+
+                @include laptop () {
+                    padding: 5px 25px;
+                    transition: none;
+                    transform: none;
+                }
+            }
+
+        @include desktop () {
+            margin: 32px auto clamp(3.125rem, -1.454rem + 22.89vw, 14rem);
+        }    
+    }
+}

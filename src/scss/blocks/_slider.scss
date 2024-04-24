@@ -1,0 +1,127 @@
+.slider {
+    max-width: 1900px;
+    margin: 85px auto 127px;
+
+    @include desktop ()  {
+        margin: 85px auto clamp(3.75rem, 2.227rem + 7.61vw, 7.938rem);
+    }
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    max-height: 520px;
+    img {
+        display: block;
+        width: 339px;
+        height: 424px;
+        margin: 0 auto 16px;
+        object-fit: cover;
+    }
+}
+.slider__btn {
+    position: absolute;
+    z-index: 8;
+    display: flex;
+    top: 0;
+
+    @include mobile-XL () {
+        top: 60px;
+    }
+} 
+
+.slider__btn--prev {
+    right: 10vw;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 11;
+        width: 16px;
+        height: 10px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url("./../img/favicons/prev-center.svg");
+        background-repeat: no-repeat;
+    }
+
+    @include slider-max () {
+        right: 12vw;
+    }
+
+    @include laptop () {
+        right: 14vw;
+    }
+
+    @include tablet-landscape () {
+        right: 16vw;
+    }
+
+    @include mobile-XL () {
+        right: 18vw;
+    }
+
+    @include mobile-L () {
+        right: 22vw;
+    }
+
+    @include mobile-M () {
+        right: 26vw;
+    }
+}
+
+.slider__btn--next {
+    right: 7vw;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 11;
+        width: 20px;
+        height: 10px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url("./../img/favicons/next-center.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.slide__desc {
+    display: block;
+    max-width: 339px;
+    margin: auto;
+
+    font-family: Roboto;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: calc(28 / 16);
+}
+
+.slide__price {
+    display: block;
+    max-width: 339px;
+    margin: auto;
+
+    font-family: Cardo;
+    font-size: 17px;
+    line-height: calc(25 / 17);
+}
+
+
+.special-slide {
+    img {
+        margin: 0 auto 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+
+  }

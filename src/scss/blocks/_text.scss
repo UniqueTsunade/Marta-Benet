@@ -1,0 +1,10 @@
+.text {
+    font-family: Cardo;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: calc(25 / 17);
+
+    @include mobile-L () {
+        font-size: clamp(0.938rem, 0.885rem + 0.26vw, 1.063rem);
+    }
+}

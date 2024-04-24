@@ -1,0 +1,29 @@
+.selection {
+    position: relative;
+    .title {
+        text-align: left;
+
+        @include tablet-landscape () {
+            margin-bottom: 15px;
+        }
+    }
+    .btn {
+        padding-top: 0;
+        padding-bottom: 0;
+        transition: .5s;
+        
+        &:hover {
+        transition : .4s;
+        padding: 0px 40px;
+        transform : translateY(-0px);
+
+            @include laptop () {
+                padding: 5px 25px;
+                transition: none;
+                transform: none;
+            }
+        }        
+    }
+}
+
+

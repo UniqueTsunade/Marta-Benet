@@ -1,0 +1,55 @@
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 308px);
+    gap: 108px 76px;
+    justify-content: space-evenly;
+    margin-bottom: 172px;
+
+    .container-grid__title {
+        margin-top: 17px;
+        font-family: Roboto;
+        font-size: 22px;
+        line-height: calc(36 / 22);
+        text-align: center;
+
+
+        @include desktop () {
+            margin-top: 0;
+            font-size: clamp(1.125rem, 1.02rem + 0.53vw, 1.375rem);
+        }
+    }
+
+    .container-grid__desc {
+        font-family: Cardo;
+        font-size: 17px;
+        line-height: calc(25 / 17);
+        text-align: center;
+        
+        @include desktop () {
+            font-size: clamp(0.938rem, 0.885rem + 0.26vw, 1.063rem);
+        }
+    }
+
+
+    @include desktop () {
+        grid-template-columns: repeat(3, 250px);
+        gap: 90px 50px;
+    }
+
+    @include laptop () {
+        grid-template-columns: repeat(2, 270px);
+        gap: 50px 40px;
+    }
+
+    @include tablet-portrait () {
+        grid-template-columns: repeat(2, 230px);
+    }
+
+    @include  mobile-XL () {
+        grid-template-columns: repeat(2, 190px);
+    }
+
+    @include  mobile-L () {
+        grid-template-columns: repeat(1, 250px);
+    }
+}
