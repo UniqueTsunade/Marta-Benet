@@ -11,11 +11,6 @@
 	--color: #000;
 	--radius: 4px;
 
-	/* Fixed height and width */
-	/* height: var(--height); */
-	/* width: var(--width); */
-
-	/* Dynamic height and width */
 	height: calc(var(--line-height) * 3 + var(--spacing) * 2);
 	width: var(--width);
 
@@ -85,8 +80,3 @@
 	// display: none;
 }
 
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }
